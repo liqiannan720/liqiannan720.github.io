@@ -174,23 +174,47 @@
 
 <!-- Image plus basic information -->
 <div class="container">
-	<div class="row">
-	  <style>
-		img {
-		  border-radius: 50%;
-		}
-	 </style>
-	  <div class="column_left" >
-		<img src="./img/qiannan3.JPG" align="middle" alt="qiannan" width="250" height="250">
-	  </div>
-	  <div class="column_right" style="">
-		<p style="font-family:verdana; font-size:25px; font-weight:bold;"> Qiannan Li</p>
-		<p style="font-family:verdana; font-size:16px;"> Assistant Professor<br> 
-		Department of Philosphy <br>
-		University of California, Davis <br>
+	<style>
+	  .profile {
+		display: flex;
+		align-items: center;
+		gap: 48px;
+		margin: 10px 0 30px 50px;
+		font-family: verdana;
+	  }
+	  .profile img {
+		width: 220px;
+		height: 220px;
+		flex-shrink: 0;
+		object-fit: cover;
+		object-position: center top;
+		border-radius: 50%;
+	  }
+	  .profile .name {
+		font-size: 34px;
+		font-weight: bold;
+		line-height: 1.2;
+		margin: 0 0 12px 0;
+	  }
+	  .profile .info {
+		font-size: 18px;
+		line-height: 1.7;
+		margin: 0;
+	  }
+	  @media (max-width: 600px) {
+		.profile { flex-direction: column; margin-left: 0; text-align: center; gap: 20px; }
+	  }
+	</style>
+	<div class="profile">
+	  <img src="./img/qiannan4.png" alt="Qiannan Li">
+	  <div>
+		<p class="name">Qiannan Li</p>
+		<p class="info">Assistant Professor<br>
+		Department of Philosophy<br>
+		University of California, Davis<br>
 		<!--  1240 Social Science and Humanities, 1 Shields Avenue, Davis, CA 95616<br>-->
 		Email: qnli at ucdavis dot edu<br>
-		<a href="https://scholar.google.com/citations?user=Gh46XU0AAAAJ&hl=en&authuser=2">Google Scholar </a> 
+		<a href="https://scholar.google.com/citations?user=Gh46XU0AAAAJ&hl=en&authuser=2">Google Scholar</a>
 		<!-- Phone: 612-625-6563<br><br> -->
 		</p>
 	  </div>
